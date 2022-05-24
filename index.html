@@ -4,9 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>FocusTimer 2.0</title>
 </head>
 <body>
-    
+    <main> 
+        <section class="timer">
+
+            <div id="timer">
+                <span class="minutes">25</span>
+                <span>:</span>
+                <span class="seconds">00</span>
+            </div>
+
+            <div class="controls">
+
+                <img 
+                    src="./assets/play.svg" 
+                    alt="play" 
+                    class="play"
+                >   
+
+                <img 
+                    src="./assets/stop.svg" 
+                    alt="stop"
+                    class="pause hide"
+                >
+                               
+                <img 
+                    src="./assets/+.svg" 
+                    alt="increase"
+                    class="increase hide"
+                >
+                
+                <img 
+                    src="./assets/-.svg" 
+                    alt="decrease"
+                    class="decrease"
+                >
+                
+            </div>
+
+        </section>  
+        
+        <section class="sons">
+
+            <button class="forest">
+                <img src="./assets/forest.svg" alt="Floresta">
+            </button>
+
+            <button class="rain">
+                <img src="./assets/rain.svg" alt="Chuva">
+            </button>
+
+            <button class="coffeeShop">
+                <img src="./assets/coffeeShop.svg" alt="Cafeteria">
+            </button>
+
+            <button class="fireplace">
+                <img src="./assets/fireplace.svg" alt="Lareira">
+            </button>
+
+        </section>
+
+    </main>
 </body>
 </html>
