@@ -35,15 +35,17 @@ main{
 .timer{
     display:flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 4.8rem;
 
     width: 32.1rem;
     height: 21.3rem;
+
+    margin: auto 0;
 }
 
 #timer{
     display:flex;
-    height: 14.8rem
+    height: 11.8rem
 
 }
 
@@ -65,7 +67,6 @@ main{
 }
 
 .sons button{
-
 
     width: 13.8rem;
     height: 15.2rem;
