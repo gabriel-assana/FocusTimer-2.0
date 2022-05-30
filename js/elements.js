@@ -1,25 +1,53 @@
+const buttonPlay = document.querySelector('.play')
+const buttonStop = document.querySelector('.stop')
+const buttonPause = document.querySelector('.pause')
+
+
+const buttonPlus = document.querySelector('.plus')
+const buttonLess = document.querySelector('.less')
+
+const buttonTree = document.querySelector('.tree')
+const buttonRain = document.querySelector('.rain')
+const buttonMarket = document.querySelector('.market')
+const buttonFlame = document.querySelector('.flame')
+
 const minutesDisplay = document.querySelector('.minutes')
 const secondsDisplay = document.querySelector('.seconds')
 
-const buttonPlay = document.querySelector('.play')
-const buttonStop = document.querySelector('.stop')
-const buttonIncrementer = document.querySelector('.increase')
-const buttonDecrementer = document.querySelector('.decrease')
+const body = document.querySelector('body')
+const lightButton = document.querySelector('#light')
+const darkButton = document.querySelector('#dark')
 
-const buttonForest = document.querySelector('.forest')
-const buttonRain = document.querySelector('.rain')
-const buttonCoffeeShop = document.querySelector('.coffeeShop')
-const buttonFireplace = document.querySelector('.fireplace')
+const treeVolumeButton = document.querySelector(
+  '.card.tree input[type="range"]'
+)
+const rainVolumeButton = document.querySelector(
+  '.card.rain input[type="range"]'
+)
+const marketVolumeButton = document.querySelector(
+  '.card.market input[type="range"]'
+)
+const flameVolumeButton = document.querySelector(
+  '.card.flame input[type="range"]'
+)
 
 export {
-  minutesDisplay,
-  secondsDisplay,
   buttonPlay,
   buttonStop,
-  buttonIncrementer,
-  buttonDecrementer,
-  buttonForest,
+  buttonPlus,
+  buttonPause,
+  buttonLess,
+  buttonTree,
   buttonRain,
-  buttonCoffeeShop,
-  buttonFireplace
+  buttonMarket,
+  buttonFlame,
+  minutesDisplay,
+  secondsDisplay,
+  body,
+  lightButton,
+  darkButton,
+  treeVolumeButton,
+  rainVolumeButton,
+  marketVolumeButton,
+  flameVolumeButton
 }

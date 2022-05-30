@@ -1,76 +1,167 @@
-:root{
-    font-size: 62.5%;
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
 }
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto';
+:root {
+  --light-background-color: hsla(0, 0%, 100%, 1);
+  --dark-background-color: hsla(240, 5%, 7%, 1);
+
+  --light-card-color: hsla(240, 9%, 89%, 1);
+  --dark-card-color: hsla(240, 6%, 17%, 1);
+
+  --light-selected-card-color: hsla(194, 97%, 31%, 1);
+  --dark-selected-card-color: hsla(195, 74%, 15%, 1);
+
+  --light-text-color: hsla(240, 6%, 21%, 1);
+  --dark-text-color: hsla(0, 0%, 100%, 1);
+
+  --light-icons-color: hsla(240, 6%, 21%, 1);
+  --dark-icons-color: hsla(240, 7%, 78%, 1);
+
+  font-size: 62.5%;
 }
 
-body{
-    display: grid;
-    min-height: 100vh;
+body {
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--light-text-color);
 }
 
-main{
-    display:flex;
-    gap: 19.2rem;
-
-    justify-self: center;
-    align-self: center;
-
-    margin: 0 auto;
-
-    width: 82.1rem;
-    height: 33.6rem;
-
-    font-size: 12.6rem;
-    line-height: 14.8rem;
-    text-align: center;
-    text-transform: uppercase;
+header {
+  position: absolute;
+  top: 6.4rem;
+  right: 6.4rem;
 }
 
-.timer{
-    display:flex;
-    flex-direction: column;
-    gap: 4.8rem;
-
-    width: 32.1rem;
-    height: 21.3rem;
-
-    margin: auto 0;
+body header svg {
+  cursor: pointer;
+  display: none;
 }
 
-#timer{
-    display:flex;
-    height: 11.8rem
-
+body.light header svg#light {
+  display: block;
 }
 
-.controls{
-    display: flex;
-    gap: 4.0rem;
-
-    width: 31.2rem;
-    height: 4.8rem;
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
 }
 
-.sons{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3.2rem;
-
-    width: 30.8rem;
-    height: 33.6rem;
+#timer {
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+  text-transform: uppercase;
+  display: flex;
+  gap: 1rem;
 }
 
-.sons button{
+#controls {
+  display: flex;
+  justify-content: space-around;
+}
 
-    width: 13.8rem;
-    height: 15.2rem;
+#controls button {
+  cursor: pointer;
+  background-color: transparent;
+}
 
-    border: none;
-    border-radius: 2.4rem;
+.hide{
+  display: none;
+}
+
+aside {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}
+
+aside .card {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2.4rem;
+  padding: 2.4rem;
+  background: var(--light-card-color);
+  cursor: pointer;
+  transition: 400ms;
+}
+
+aside .card.selected {
+  background: var(--light-selected-card-color);
+}
+
+aside .card.selected svg path {
+  fill: var(--dark-text-color);
+}
+
+aside .card input[type='range'] {
+  width: 9rem;
+  -webkit-appearance: none;
+  background: var(--light-text-color);
+  outline: none;
+  height: 0.4rem;
+  border-radius: 9px;
+}
+
+aside .card.selected input[type='range'] {
+  background: var(--dark-text-color);
+}
+
+aside .card input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+
+  background: var(--light-text-color);
+  cursor: pointer;
+}
+
+aside .card.selected input[type='range']::-webkit-slider-thumb {
+  background: var(--dark-text-color);
+}
+
+/* DARK MODE */
+
+body.dark header svg#dark {
+  display: block;
+}
+
+body.dark {
+  background: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+body.dark main #controls button svg path {
+  fill: var(--dark-text-color);
+}
+
+body.dark aside .card {
+  background-color: var(--dark-card-color);
+}
+
+body.dark aside .card svg path {
+  fill: var(--dark-text-color);
+}
+
+body.dark aside .card.selected {
+  background: var(--dark-selected-card-color);
+}
+
+body.dark aside .card input[type='range'] {
+  background: var(--dark-text-color);
+}
+
+body.dark aside .card input[type='range']::-webkit-slider-thumb {
+  background: var(--dark-text-color);
 }
