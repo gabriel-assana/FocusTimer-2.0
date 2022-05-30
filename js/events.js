@@ -68,6 +68,8 @@ export default function ({ controls }) {
 
   buttonStop.addEventListener('click', () => {
     controls.stop()
+    buttonPause.classList.add('hide')
+    buttonPlay.classList.remove('hide')
   })
 
   buttonPlus.addEventListener('click', () => {
