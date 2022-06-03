@@ -16,9 +16,11 @@
 - [x] Iniciar o timer.
 - [x] Pausar timer.
 - [x] Parar timer.
-- [x] Aumentar e abaixar o volume dos som pela barra de volume. 
+- [x] Adicionar 5 minutos ao timer.
+- [x] Remover 5 minutos do timer.
 - [x] Ao parar cronometro voltar para o tempo inserido anteriormente.
 - [x] Opções de 4 sons diferentes.
+- [x] Aumentar e abaixar o volume dos sons pela barra de volume. 
 - [x] Dark mode.
 
 ## :rocket: Tecnologias
