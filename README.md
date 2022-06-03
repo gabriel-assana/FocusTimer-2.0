@@ -16,6 +16,7 @@
 - [x] Iniciar o timer.
 - [x] Pausar timer.
 - [x] Parar timer.
+- [x] Aumentar e abaixar o volume dos som pela barra de volume. 
 - [x] Ao parar cronometro voltar para o tempo inserido anteriormente.
 - [x] Opções de 4 sons diferentes.
 - [x] Dark mode.
