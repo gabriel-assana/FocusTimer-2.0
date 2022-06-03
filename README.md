@@ -14,8 +14,8 @@
 ## 🔎 Features
 
 - [x] Iniciar o timer.
-- [x] Pausar timer.
-- [x] Parar timer.
+- [x] Pausar o timer.
+- [x] Parar o timer.
 - [x] Adicionar 5 minutos ao timer.
 - [x] Remover 5 minutos do timer.
 - [x] Ao parar cronometro voltar para o tempo inserido anteriormente.
