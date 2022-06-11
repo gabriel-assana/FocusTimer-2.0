@@ -47,7 +47,7 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone https://github.com/gabriel-assana/FocusTimer
+$ git clone https://github.com/gabriel-assana/FocusTimer-2.0
 # Acesse a pasta do projeto no terminal/cmd
 $ cd FocusTimer-2.0
 # Abra um novo terminal e execute a aplicação em modo de desenvolvimento
